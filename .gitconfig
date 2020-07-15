@@ -1,0 +1,24 @@
+[core]
+	excludesfile = /Users/vince33tech/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[alias]
+	cm = commit
+	st = status
+	co = checkout
+	br = branch
+	gc = remote prune origin
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblueby %an %Cgreen(%cr)%Creset'
+[color "diff-highlight"]
+	oldNormal = red bold
+    	oldHighlight = red bold 52
+    	newNormal = green bold
+    	newHighlight = green bold 22
+[url "https://"]
+    	insteadOf = git://
+[pull]
+	rebase = true
