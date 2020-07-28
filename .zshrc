@@ -7,14 +7,12 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-
-# @see https://draculatheme.com/zsh
-ZSH_THEME="dracula"
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="Dracula"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
+# a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
@@ -35,7 +33,7 @@ ZSH_THEME="dracula"
 # export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line if pasting URLs and other text is messed up.
-# DISABLE_MAGIC_FUNCTIONS=true
+# DISABLE_MAGIC_FUNCTIONS="true"
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -66,18 +64,18 @@ ZSH_THEME="dracula"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Which plugins would you like to load?
-# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
 # @see https://github.com/zsh-users/zsh-autosuggestions
 # @see https://github.com/zsh-users/zsh-syntax-highlighting
 plugins=(
-  git
-  zsh-syntax-highlighting
-  zsh-autosuggestions
-  z
+	git
+	zsh-syntax-highlighting
+	zsh-autosuggestions
+	z
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -108,13 +106,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# set nvm
+# nvm
 export NVM_DIR="$HOME/.nvm"
-  . "/usr/local/opt/nvm/nvm.sh"
-
-# DEFAULT_USER="(¦3[▓▓]="
-# DEFAULT_USER="ᕕ(⌐▨з▨)ᕗ"
-#DEFAULT_USER="ლ(*꒪ヮ꒪*)ლ"
-#DEFAULT_USER="⁽⁽٩(๑˃̶͈̀ ᗨ ˂̶͈́)۶⁾⁾"
+. "$(brew --prefix nvm)/nvm.sh"
 
 PROMPT="%{$fg_bold[yellow]%}(oﾟ▽ﾟ)oﾟ▽ﾟ)oﾟ▽ﾟ)o %{$reset_color%} ${PROMPT}"

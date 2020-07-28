@@ -11,7 +11,7 @@
 	st = status
 	co = checkout
 	br = branch
-	gc = remote prune origin
+	gco = remote prune origin
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblueby %an %Cgreen(%cr)%Creset'
 [color "diff-highlight"]
 	oldNormal = red bold
