@@ -1,0 +1,18 @@
+DEFAULT_USER="Ψ(｀∀´#)ﾉ"
+PROMPT="%{$fg_bold[yellow]%}Ψ(｀∀´#)ﾉ %{$reset_color%} ${PROMPT}"
+
+# Common shortcuts
+alias reload="source ~/.zshrc"
+
+# Always enable colored `grep` output
+# Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# Check Your IP address
+alias ip="curl ipinfo.io/ip"
+alias ipl="hostname -I"
+
+# Alias Docker
+alias dock="docker-compose"

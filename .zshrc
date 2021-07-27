@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/vince/.oh-my-zsh"
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -103,21 +103,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# alias bat="/usr/local/bin/bat"
-
-# --- Custom ---
-
 # Set nvm
 export NVM_DIR="$HOME/.nvm"
   . "/usr/local/opt/nvm/nvm.sh"
 
 # Set zsh syntax highlight
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# DEFAULT_USER="(¦3[▓▓]="
-DEFAULT_USER="ᕕ(⌐▨з▨)ᕗ"
-
-PROMPT="%{$fg_bold[yellow]%}ᕕ(⌐▨з▨)─=≡3 %{$reset_color%} ${PROMPT}"
 
 # GO DEVELOPMENT
 export GOPATH="${HOME}/.go"
@@ -126,4 +117,4 @@ export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 test -d "${GOPATH}" || mkdir "${GOPATH}"
 test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
 
-alias dock="docker-compose"
+source $HOME/.zsh_alias

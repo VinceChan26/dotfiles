@@ -1,0 +1,15 @@
+bat
+composer
+python
+gcc
+go
+git
+httpie
+node
+nvm
+php-cs-fixer
+yarn
+zsh
+zsh-autosuggestions
+zsh-completions
+zsh-syntax-highlighting
